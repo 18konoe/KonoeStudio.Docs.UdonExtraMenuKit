@@ -1,32 +1,51 @@
 ---
-title: "Introduction"
-metaTitle: "This is the title tag of this page"
-metaDescription: "This is the meta description"
+title: "機能概要"
+metaTitle: "Introduction"
+metaDescription: "本製品の機能に関する概要説明"
 ---
 
-Some introduction text. Lists out all the headings from h1 to h6. Easy to customise.
+# 主な構成要素
 
-# Heading H1
-Heading 1 text
+本アセットは主に3つの要素から成ります。
 
-## Heading H2
-Heading 2 text
+1. 拡張メニュー
+2. 移動可能ウィンドウ
+3. UIコンポーネント
 
-### Heading H3
-Heading 3 text
+## 1. 拡張メニュー
 
-#### Heading H4
-Heading 4 text
+メニューを出す動作（デスクトップではEscキー、VRではJoystickのボタン0か2に該当）で自分の前に出るメニュー画面です。  
+もう一度押すか、プレイヤーが移動すると画面は消えます。
 
-##### Heading H5
-Heading 5 text
+詳細カスタマイズで説明しますが、拡張メニューを出すキーは他のキーに設定可能です。  
+また、プレイヤーが移動しても画面が消えないようにも設定できます。
 
-###### Heading H6
-Heading 6 text
+![機能概要1](/udon-extra-menu-kit/image/introduction/1-1.png)
 
-## Lists
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+拡張メニューは基本的にVRCのメニューを出している間だけ操作できます。
+
+[より詳細な機能説明は**拡張メニュー**へ](/introduction/1-ExtendMenu)
+
+## 2. 移動可能ウィンドウ
+
+上部ヘッダー部分をPickupして動かすことのできるウィンドウです。  
+移動後もPrefabに付属するボタンを押すことで元の位置に戻すことができます。  
+初期状態で非表示とし、ボタンを押すことで空中に表示させるオプションもあります。
+
+![機能概要2](/udon-extra-menu-kit/image/introduction/1-2.png)
+
+移動可能ウィンドウそのものは機能を持たず、ウィンドウ内に下記のUIコンポーネントを配置し、それらを機能として設定することではじめて使えるものになります。  
+下記の詳細な機能説明で登場するウィンドウも、例としてそのまま使えるものを用意しています。  
+
+
+[より詳細な機能説明は**移動可能ウィンドウ**へ](/introduction/2-MovableWindow)
+
+## 3. UIコンポーネント
+
+移動可能ウィンドウに任意の機能を持たせるため、再利用可能なUIのPrefabを用意しています。
+
+![機能概要3](/udon-extra-menu-kit/image/introduction/1-3.png)
+
+アラームのコンポーネントのみ、アラームのために用意したので使い所が限られていますが、その他のUIコンポーネントは簡単に移動可能ウィンドウに追加することができ、機能を追加することができます。
+
+[より詳細な機能説明は**UIコンポーネント**へ](/introduction/3-UIComponent)
